@@ -1,0 +1,10 @@
+name: PR Workflow Test
+run-name: ${{ github.actor }} is testing out a workflow in a PR
+on: [pull_request]
+jobs:
+  PR-Workflow-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          pwd
+          ls -la
