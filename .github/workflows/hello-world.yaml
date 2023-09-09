@@ -18,3 +18,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Call-Reusable-Workflow:
     uses: ./.github/workflows/manual.yaml
+    with:
+      name: ${{ github.actor }}
