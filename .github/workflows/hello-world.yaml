@@ -21,6 +21,6 @@ jobs:
     with:
       name: ${{ github.actor }}
   Call-Remote-Reusable-Workflow:
-    uses: atiterlea/plaid/.github/workflows/reusable-workflow.yaml@latest
+    uses: atiterlea/plaid/.github/workflows/reusable-workflow.yaml@main
     with:
       name: ${{ github.actor }}
