@@ -16,10 +16,12 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
   Call-Local-Reusable-Workflow:
     uses: ./.github/workflows/manual.yaml
     with:
       name: ${{ github.actor }}
+
   Call-Remote-Reusable-Workflow:
     uses: atiterlea/plaid/.github/workflows/reusable-workflow.yaml@main
     with:
